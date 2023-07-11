@@ -1,9 +1,10 @@
-import { Nav } from "./components";
+import { AppContexts } from 'contexts';
+import { AppRoutes } from 'routes';
 
 export default function App() {
   return (
-    <div>
-      <Nav/>
-    </div>
+    <AppContexts>
+      <AppRoutes />
+    </AppContexts>
   );
 }
